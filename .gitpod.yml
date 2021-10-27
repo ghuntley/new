@@ -1,6 +1,8 @@
 image:
   file: .gitpod.Dockerfile
 
+experimentalNetwork: true
+
 tasks:
   - init: >
       mkdir -p /home/gitpod/.config/nix &&
@@ -16,5 +18,3 @@ tasks:
 vscode:
   extensions:
     - bbenoist.Nix
-    
-experimentalNetwork: true
