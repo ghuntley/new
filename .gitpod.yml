@@ -7,6 +7,9 @@ tasks:
   - init: >
       mkdir -p /home/gitpod/.config/nix &&
       echo 'sandbox = false' >> /home/gitpod/.config/nix/nix.conf
+  - name: nix
+    command: |
+      direnv allow
   - name: tailscaled
     command: |
       sudo tailscaled
