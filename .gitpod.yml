@@ -84,12 +84,12 @@ image:
 #     lynx `gp url`
 
 tasks:
-  - init: >
-      mkdir -p /home/gitpod/.config/nix &&
-      echo 'sandbox = false' >> /home/gitpod/.config/nix/nix.conf
-  - name: nix
-    command: |
-      direnv allow
+# - init: >
+#     mkdir -p /home/gitpod/.config/nix &&
+#     echo 'sandbox = false' >> /home/gitpod/.config/nix/nix.conf
+# - name: nix
+#   command: |
+#     direnv allow
   - name: tailscaled
     command: |
       sudo tailscaled
@@ -128,9 +128,9 @@ tasks:
 #    - esbenp.prettier-vscode@9.5.0
 #    - https://example.com/abc/releases/extension-0.26.0.vsix
 
-vscode:
-  extensions:
-    - bbenoist.Nix
+# vscode:
+#   extensions:
+#     - bbenoist.Nix
 
 ## The 'github' section defines configuration of continuous prebuilds
 ## for GitHub repositories when the GitHub application
